@@ -31,22 +31,19 @@ const Login = () => {
       email.current.value,
       password.current.value
     );
-    //console.log(message);
+
     if (message) {
       setErrorMsg(message);
       return;
     }
     // sign in or sign up Logic
     if (!issignIn) {
-      // sign Up logic
       createUserWithEmailAndPassword(
         auth,
         email.current.value,
         password.current.value
       )
         .then((userCredential) => {
-          // Signed up
-
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
