@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import Header from "./Header";
-import { BG_IMG_URL } from "../utils/constants";
+
+import BG_IMG_URL from "../images/BG_IMG_URL.jpg";
 import { validate } from "../utils/validator";
 
 import {
@@ -9,7 +10,8 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { USER_AVATAR } from "../utils/constants";
+//import { USER_AVATAR } from "../utils/constants";
+import USER_AVATAR from "../images/avatar.png";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 

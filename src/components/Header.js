@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import { LOGO } from "../utils/constants";
+//import { LOGO } from "../utils/constants";
+import LOGO from "../images/Netflix_Logo_PMS (1).png";
 import { useDispatch, useSelector } from "react-redux";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../utils/firebase";
