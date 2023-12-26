@@ -6,16 +6,28 @@ import MainContainer from "./MainContainer";
 import SecondaryContainer from "./SecondaryContainer";
 import useTopRatedMovies from "../hooks/useTopRatedMovies";
 import useTrendingMovies from "../hooks/useTrendingMovies";
+import useUpcomingMovies from "../hooks/useUpcomingMovies";
+import usePopularTvSeries from "../hooks/usePopularTvSeries";
+import useTopRatedTvSeries from "../hooks/useTopRatedTvSeries";
+import { useSelector } from "react-redux";
 
 const Browse = () => {
   useNowPlayingMovies();
   usePopularMovies();
   useTopRatedMovies();
   useTrendingMovies();
+  useUpcomingMovies();
+  //tv
+  usePopularTvSeries();
+  useTopRatedTvSeries();
+
+  const movies = useSelector((store) => store.movies?.nowPlayingMovies);
+  // console.log("browse");
+  // console.log(movies);
   return (
     <div>
       <Header />
-      <MainContainer />
+      <MainContainer movies={movies} />
       <SecondaryContainer />
     </div>
   );
