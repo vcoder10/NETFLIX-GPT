@@ -24,8 +24,7 @@ const Browse = () => {
 
   const movies = useSelector((store) => store.movies?.nowPlayingMovies);
   const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
-  // console.log("browse");
-  // console.log(movies);
+
   return (
     <div>
       <Header />

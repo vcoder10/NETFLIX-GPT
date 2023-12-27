@@ -4,8 +4,7 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNThiYTc5YzMxNTZmZjgyOTQxNjIzNzczNTU4OGEwZiIsInN1YiI6IjY1ODg2ZTE1MjJlNDgwN2U2MmMxOWE1YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.rwh5BIhmvi0_LegAi2I3SaWBF6eWiSEscKRGgKIAF-k",
+    Authorization: process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -14,7 +13,7 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "hindi", name: "Hindi" },
   { identifier: "french", name: "French" },
 ];
-
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
 // export const USER_AVATAR =
 //   "https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdpkabKqQAxyWzo6QW_ZnPz1IZLqlmNfK-t4L1VIeV1DY00JhLo_LMVFp936keDxj-V5UELAVJrU--iUUY2MaDxQSSO-0qw.png?r=e6e";
 

@@ -2,7 +2,7 @@ import React from "react";
 import { IMG_CDN_URL } from "../utils/constants";
 
 const MovieCard = ({ poster_url, movieName }) => {
-  //console.log(poster_url);
+  if (!poster_url) return null;
   return (
     <div className="w-52 pr-4">
       <img
