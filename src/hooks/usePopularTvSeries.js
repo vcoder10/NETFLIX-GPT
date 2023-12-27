@@ -1,10 +1,11 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { API_OPTIONS } from "../utils/constants";
 import { addPopularTvSeries } from "../utils/moviesSlice";
 import { useEffect } from "react";
 
 const usePopularTvSeries = () => {
   const dispatch = useDispatch();
+  const popularTvSeries = useSelector((store) => store.movies.popularTvSeries);
   const getPopularTvSeries = async () => {
     const data = await fetch(
       "https://api.themoviedb.org/3/tv/popular?&page=1",
@@ -15,7 +16,7 @@ const usePopularTvSeries = () => {
     dispatch(addPopularTvSeries(json.results));
   };
   useEffect(() => {
-    getPopularTvSeries();
+    !popularTvSeries && getPopularTvSeries();
   }, []);
 };
 
