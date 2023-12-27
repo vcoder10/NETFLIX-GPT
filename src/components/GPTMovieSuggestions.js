@@ -8,7 +8,7 @@ const GPTMovieSuggestions = () => {
 
   //const popularMovie = movieResults.filter((movie) => movie.vote_average > 5);
 
-  useRecomendedMovies(82520);
+  useRecomendedMovies(27205);
 
   const movies = useSelector((store) => store.movies);
 
@@ -19,7 +19,7 @@ const GPTMovieSuggestions = () => {
       <MovieList movies={movieResults} />
       <MovieList title={"Recomended"} movies={movies?.recomendedMovies} />
       <MovieList title={"Top Rated"} movies={movies?.topRatedMovies} />
-      <MovieList title={"Trending"} movies={movies?.trendingMovies} />
+      {/* <MovieList title={"Trending"} movies={movies?.trendingMovies} /> */}
       <MovieList title={"Popular"} movies={movies?.popularMovies} />
     </div>
   );
