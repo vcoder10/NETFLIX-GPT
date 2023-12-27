@@ -16,7 +16,7 @@ const Browse = () => {
   useNowPlayingMovies();
   usePopularMovies();
   useTopRatedMovies();
-  useTrendingMovies();
+  //useTrendingMovies();
   useUpcomingMovies();
   //tv
   usePopularTvSeries();
