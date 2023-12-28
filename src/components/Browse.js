@@ -32,7 +32,7 @@ const Browse = () => {
         <GPTSearch />
       ) : (
         <>
-          <MainContainer movies={movies} />
+          <MainContainer movies={movies ? movies[0] : null} />
           <SecondaryContainer />
         </>
       )}

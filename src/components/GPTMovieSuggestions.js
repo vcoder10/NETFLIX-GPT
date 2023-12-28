@@ -6,8 +6,6 @@ import useRecomendedMovies from "../hooks/useRecomendedMovies";
 const GPTMovieSuggestions = () => {
   const { movieResults } = useSelector((store) => store.gpt);
 
-  //const popularMovie = movieResults.filter((movie) => movie.vote_average > 5);
-
   useRecomendedMovies(27205);
 
   const movies = useSelector((store) => store.movies);

@@ -4,12 +4,12 @@ import VideoTitle from "./VideoTitle";
 
 const MainContainer = ({ movies }) => {
   if (!movies) return;
-  const mainMovie = movies[1];
-  const { original_title, overview, id } = mainMovie;
+  //const mainMovie = movies[0];
+  const { original_title, overview, id } = movies;
 
   return (
-    <div className="pt-[40%] bg-black md:pt-0">
-      <VideoTitle title={original_title} overview={overview} />
+    <div className="pt-[30%]  bg-black md:pt-0">
+      <VideoTitle title={original_title} overview={overview} id={id} />
       <VideoBackground movieId={id} />
     </div>
   );

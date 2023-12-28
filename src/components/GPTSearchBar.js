@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import languages from "../utils/languageConstants";
 //import openai from "../utils/openai";
 import { API_OPTIONS } from "../utils/constants";
-import { addGptMovieResult } from "../utils/gptSlice";
+import { addGptMovieResult, clearGptMovieResult } from "../utils/gptSlice";
 
 const GPTSearchBar = () => {
   const searchText = useRef();
@@ -24,6 +24,12 @@ const GPTSearchBar = () => {
       })
     );
   };
+  useEffect(() => {
+    return () => {
+      // This cleanup function will be called when the component is unmounted
+      dispatch(clearGptMovieResult());
+    };
+  }, []);
 
   return (
     <div className=" pt-[45%] pb-10 md:pt-[10%] flex justify-center">
