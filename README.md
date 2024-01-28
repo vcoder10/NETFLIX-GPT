@@ -1,19 +1,41 @@
+Live Link: "https://vcoder10-netflixgpt.netlify.app"
+
+Demo Link: "https://drive.google.com/drive/folders/1PKN6sEeF5QE54dypZO8KZMjVpz8nAlq9"
+
+Steps :
+
 Create React App
+
 Configured TailwindCSS
+
 Header
+
 Routing of App
+
 Login Form
+
 Sign up Form
+
 Form Validation
+
 useRef Hook
+
 Firebase Setup
+
 Deploying our app to production
+
 Create SignUp User Account
+
 Implement Sign In user Api
+
 Created Redux Store with userSlice
+
 Implemented Sign out
+
 Update Profile
+
 BugFix: Sign up user displayName and profile picture update
+
 BugFix: if the user is not logged in Redirect /browse to Login Page and vice-versa
 Unsubscibed to the onAuthStateChanged callback
 Add hardcoded values to the constants file
@@ -55,7 +77,7 @@ Main Movie
 Tailer in Background
 Title & Description
 MovieSuggestions
-MovieLists \* N
+MovieLists N
 NetflixGPT
 Search Bar
 Movie Suggestions
