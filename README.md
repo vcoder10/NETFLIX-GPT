@@ -43,6 +43,7 @@ usePopularMovies Custom hook
 GPT Search Page  
 GPT Search Bar  
 (BONUS) Multi-language Feature in our App)  
+### GPT Search feature
 Get Open AI Api Key  
 Gpt Search API Call  
 fetched gptMoviesSuggestions from TMDB  
