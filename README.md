@@ -1,8 +1,8 @@
-Live Link: https://vcoder10-netflixgpt.netlify.app
+**Live Link**: https://vcoder10-netflixgpt.netlify.app
 
-Demo Link: https://drive.google.com/drive/folders/1PKN6sEeF5QE54dypZO8KZMjVpz8nAlq9](https://drive.google.com/file/d/1Tk--qaktrDgg-hP1oOu4u4G9tWX0MIWk/view?usp=sharing
+**Demo Link**: https://drive.google.com/drive/folders/1PKN6sEeF5QE54dypZO8KZMjVpz8nAlq9](https://drive.google.com/file/d/1Tk--qaktrDgg-hP1oOu4u4G9tWX0MIWk/view?usp=sharing
 
-Steps :
+**Steps :**
 
 Create React App
 
@@ -33,9 +33,10 @@ Add hardcoded values to the constants file
 Regiter TMDB API & create an app & get access token
 Get Data from TMDB now playing movies list API
 Custom Hook for Now Playing Movies
-Create movieSlice
-Update Store with movies Data
+Create movieSlice/n
+Update Store with movies Data/n
 Planning for MainContauiner & secondary container
+
 Fetch Data for Trailer Video
 Update Store with Trailer Video Data
 Embedded the Yotube video and make it autoplay and mute
